@@ -7,9 +7,12 @@
 //
 
 #import "GPXTrack.h"
+#import "GPXTrackSegment.h"
 
 @implementation GPXTrack {
     NSMutableArray* _segments;
+    double _length;
+    double _elevationGain;
 }
 
 -(id)init {
@@ -22,10 +25,20 @@
 
 -(void)addTrackSegment:(GPXTrackSegment *)trkseg {
     [_segments addObject:trkseg];
+    _length += trkseg.length;
+    _elevationGain += trkseg.elevationGain;
 }
 
 - (NSArray*)segments {
     return _segments;
+}
+
+- (double)length {
+    return _length;
+}
+
+- (double)elevationGain {
+    return _elevationGain;
 }
 
 @end

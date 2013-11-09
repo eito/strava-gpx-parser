@@ -74,9 +74,6 @@
 #pragma mark NSXMLParserDelegate
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
-//    NSLog(@"Ending Element: %@", elementName);
-    
     //
     // ending a new track
     if ([elementName isEqualToString:@"trk"]) {
@@ -105,16 +102,6 @@
 }
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
-//    NSLog(@"Starting Element: %@", elementName);
-    
-    /*
-     <trkpt lat="34.1708030" lon="-116.8297970">
-     <ele>1909.4</ele>
-     <time>2013-11-02T15:34:49Z</time>
-     </trkpt>
-     */
-
     //
     // starting a new track
     if ([elementName isEqualToString:@"trk"]) {
@@ -150,9 +137,6 @@
 }
 
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
-//    NSLog(@"Characters: %@", string);
-    
     if ([_currentElementName isEqualToString:@"ele"]) {
         _currentTrackpoint.elevation = [string doubleValue];
     }
@@ -168,20 +152,15 @@
 }
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+    NSLog(@"Parser Error: %@", parseError);
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
     [self.inputStream close];
     dispatch_async(EAIGetMainQueue, ^{
         [self.tableView reloadData];
     });
 
-}
-
--(void)parserDidStartDocument:(NSXMLParser *)parser {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 #pragma mark UITableViewDataSource
@@ -206,13 +185,16 @@
         lastTrackpoint = segment.trackpoints[indexPath.row - 1];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Elevation: %.2f", tp.elevation];
+    cell.textLabel.text = [NSString stringWithFormat:@"Elevation: %.2fm", tp.elevation];
     double distance = [lastTrackpoint.location distanceFromLocation:tp.location];
     double seconds = 0;
+    double gain = 0;
     if (lastTrackpoint) {
         seconds = [tp.time timeIntervalSince1970] - [lastTrackpoint.time timeIntervalSince1970];
+        gain = tp.elevation - lastTrackpoint.elevation;
     }
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2fm   Seconds: %.2f", distance, seconds];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2fm   Seconds: %.2fs   Gain: %.2fm", distance, seconds, gain];
     return cell;
 }
 

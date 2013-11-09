@@ -12,6 +12,16 @@
 
 @interface GPXTrackSegment : NSObject
 
+//
+// The total length, in meters, of this segment
+@property (nonatomic, assign, readonly) double length;
+
+//
+// The total elevation gain, in meters, of this segment
+@property (nonatomic, assign, readonly) double elevationGain;
+
+//
+// array of GPXTrackpoint objects
 @property (nonatomic, copy) NSArray *trackpoints;
 
 - (void)addTrackpoint:(GPXTrackpoint*)trackpoint;

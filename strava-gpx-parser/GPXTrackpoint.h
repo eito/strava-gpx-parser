@@ -11,17 +11,24 @@
 
 @interface GPXTrackpoint : NSObject
 
-/*
- <trkpt lat="34.1708710" lon="-116.8297050">
- <ele>1908.6</ele>
- <time>2013-11-02T15:34:47Z</time>
- </trkpt>
- */
-
+//
+// returns a CLLocation object representing this point
 @property (nonatomic, strong, readonly) CLLocation *location;
+
+//
+// the latitude of the trackpoint
 @property (nonatomic, assign) double latitude;
+
+//
+// the longitude of the trackpoint
 @property (nonatomic, assign) double longitude;
+
+//
+// the elevation of the trackpoint
 @property (nonatomic, assign) double elevation;
+
+//
+// the time the trackpoint was collected
 @property (nonatomic, strong) NSDate *time;
 
 @end
