@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E24473D182DEBD300F1C072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24473C182DEBD300F1C072 /* Foundation.framework */; };
+		4E24473F182DEBD300F1C072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24473E182DEBD300F1C072 /* CoreGraphics.framework */; };
+		4E244741182DEBD300F1C072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E244740182DEBD300F1C072 /* UIKit.framework */; };
+		4E244747182DEBD300F1C072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E244745182DEBD300F1C072 /* InfoPlist.strings */; };
+		4E244749182DEBD300F1C072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244748182DEBD300F1C072 /* main.m */; };
+		4E24474D182DEBD300F1C072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24474C182DEBD300F1C072 /* AppDelegate.m */; };
+		4E244750182DEBD300F1C072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E24474E182DEBD300F1C072 /* Main.storyboard */; };
+		4E244753182DEBD300F1C072 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244752182DEBD300F1C072 /* ViewController.m */; };
+		4E244755182DEBD300F1C072 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E244754182DEBD300F1C072 /* Images.xcassets */; };
+		4E24475C182DEBD300F1C072 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24475B182DEBD300F1C072 /* XCTest.framework */; };
+		4E24475D182DEBD300F1C072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24473C182DEBD300F1C072 /* Foundation.framework */; };
+		4E24475E182DEBD300F1C072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E244740182DEBD300F1C072 /* UIKit.framework */; };
+		4E244766182DEBD300F1C072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E244764182DEBD300F1C072 /* InfoPlist.strings */; };
+		4E244768182DEBD300F1C072 /* strava_gpx_parserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E24475F182DEBD300F1C072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E244731182DEBD300F1C072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E244738182DEBD300F1C072;
+			remoteInfo = "strava-gpx-parser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E244739182DEBD300F1C072 /* strava-gpx-parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strava-gpx-parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E24473C182DEBD300F1C072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E24473E182DEBD300F1C072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4E244740182DEBD300F1C072 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E244744182DEBD300F1C072 /* strava-gpx-parser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "strava-gpx-parser-Info.plist"; sourceTree = "<group>"; };
+		4E244746182DEBD300F1C072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E244748182DEBD300F1C072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E24474A182DEBD300F1C072 /* strava-gpx-parser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strava-gpx-parser-Prefix.pch"; sourceTree = "<group>"; };
+		4E24474B182DEBD300F1C072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E24474C182DEBD300F1C072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E24474F182DEBD300F1C072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E244751182DEBD300F1C072 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E244752182DEBD300F1C072 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E244754182DEBD300F1C072 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strava-gpx-parserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E24475B182DEBD300F1C072 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4E244763182DEBD300F1C072 /* strava-gpx-parserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "strava-gpx-parserTests-Info.plist"; sourceTree = "<group>"; };
+		4E244765182DEBD300F1C072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = strava_gpx_parserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E244736182DEBD300F1C072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24473F182DEBD300F1C072 /* CoreGraphics.framework in Frameworks */,
+				4E244741182DEBD300F1C072 /* UIKit.framework in Frameworks */,
+				4E24473D182DEBD300F1C072 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E244757182DEBD300F1C072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24475C182DEBD300F1C072 /* XCTest.framework in Frameworks */,
+				4E24475E182DEBD300F1C072 /* UIKit.framework in Frameworks */,
+				4E24475D182DEBD300F1C072 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E244730182DEBD300F1C072 = {
+			isa = PBXGroup;
+			children = (
+				4E244742182DEBD300F1C072 /* strava-gpx-parser */,
+				4E244761182DEBD300F1C072 /* strava-gpx-parserTests */,
+				4E24473B182DEBD300F1C072 /* Frameworks */,
+				4E24473A182DEBD300F1C072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E24473A182DEBD300F1C072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E244739182DEBD300F1C072 /* strava-gpx-parser.app */,
+				4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E24473B182DEBD300F1C072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E24473C182DEBD300F1C072 /* Foundation.framework */,
+				4E24473E182DEBD300F1C072 /* CoreGraphics.framework */,
+				4E244740182DEBD300F1C072 /* UIKit.framework */,
+				4E24475B182DEBD300F1C072 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E244742182DEBD300F1C072 /* strava-gpx-parser */ = {
+			isa = PBXGroup;
+			children = (
+				4E24474B182DEBD300F1C072 /* AppDelegate.h */,
+				4E24474C182DEBD300F1C072 /* AppDelegate.m */,
+				4E24474E182DEBD300F1C072 /* Main.storyboard */,
+				4E244751182DEBD300F1C072 /* ViewController.h */,
+				4E244752182DEBD300F1C072 /* ViewController.m */,
+				4E244754182DEBD300F1C072 /* Images.xcassets */,
+				4E244743182DEBD300F1C072 /* Supporting Files */,
+			);
+			path = "strava-gpx-parser";
+			sourceTree = "<group>";
+		};
+		4E244743182DEBD300F1C072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E244744182DEBD300F1C072 /* strava-gpx-parser-Info.plist */,
+				4E244745182DEBD300F1C072 /* InfoPlist.strings */,
+				4E244748182DEBD300F1C072 /* main.m */,
+				4E24474A182DEBD300F1C072 /* strava-gpx-parser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E244761182DEBD300F1C072 /* strava-gpx-parserTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */,
+				4E244762182DEBD300F1C072 /* Supporting Files */,
+			);
+			path = "strava-gpx-parserTests";
+			sourceTree = "<group>";
+		};
+		4E244762182DEBD300F1C072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E244763182DEBD300F1C072 /* strava-gpx-parserTests-Info.plist */,
+				4E244764182DEBD300F1C072 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E244738182DEBD300F1C072 /* strava-gpx-parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E24476B182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parser" */;
+			buildPhases = (
+				4E244735182DEBD300F1C072 /* Sources */,
+				4E244736182DEBD300F1C072 /* Frameworks */,
+				4E244737182DEBD300F1C072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "strava-gpx-parser";
+			productName = "strava-gpx-parser";
+			productReference = 4E244739182DEBD300F1C072 /* strava-gpx-parser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E244759182DEBD300F1C072 /* strava-gpx-parserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E24476E182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parserTests" */;
+			buildPhases = (
+				4E244756182DEBD300F1C072 /* Sources */,
+				4E244757182DEBD300F1C072 /* Frameworks */,
+				4E244758182DEBD300F1C072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E244760182DEBD300F1C072 /* PBXTargetDependency */,
+			);
+			name = "strava-gpx-parserTests";
+			productName = "strava-gpx-parserTests";
+			productReference = 4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E244731182DEBD300F1C072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eric Ito";
+				TargetAttributes = {
+					4E244759182DEBD300F1C072 = {
+						TestTargetID = 4E244738182DEBD300F1C072;
+					};
+				};
+			};
+			buildConfigurationList = 4E244734182DEBD300F1C072 /* Build configuration list for PBXProject "strava-gpx-parser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E244730182DEBD300F1C072;
+			productRefGroup = 4E24473A182DEBD300F1C072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E244738182DEBD300F1C072 /* strava-gpx-parser */,
+				4E244759182DEBD300F1C072 /* strava-gpx-parserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E244737182DEBD300F1C072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E244755182DEBD300F1C072 /* Images.xcassets in Resources */,
+				4E244747182DEBD300F1C072 /* InfoPlist.strings in Resources */,
+				4E244750182DEBD300F1C072 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E244758182DEBD300F1C072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E244766182DEBD300F1C072 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E244735182DEBD300F1C072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E244753182DEBD300F1C072 /* ViewController.m in Sources */,
+				4E24474D182DEBD300F1C072 /* AppDelegate.m in Sources */,
+				4E244749182DEBD300F1C072 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E244756182DEBD300F1C072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E244768182DEBD300F1C072 /* strava_gpx_parserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E244760182DEBD300F1C072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E244738182DEBD300F1C072 /* strava-gpx-parser */;
+			targetProxy = 4E24475F182DEBD300F1C072 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E244745182DEBD300F1C072 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E244746182DEBD300F1C072 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4E24474E182DEBD300F1C072 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E24474F182DEBD300F1C072 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E244764182DEBD300F1C072 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E244765182DEBD300F1C072 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E244769182DEBD300F1C072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E24476A182DEBD300F1C072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E24476C182DEBD300F1C072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
+				INFOPLIST_FILE = "strava-gpx-parser/strava-gpx-parser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4E24476D182DEBD300F1C072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
+				INFOPLIST_FILE = "strava-gpx-parser/strava-gpx-parser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4E24476F182DEBD300F1C072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/strava-gpx-parser.app/strava-gpx-parser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "strava-gpx-parserTests/strava-gpx-parserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4E244770182DEBD300F1C072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/strava-gpx-parser.app/strava-gpx-parser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
+				INFOPLIST_FILE = "strava-gpx-parserTests/strava-gpx-parserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E244734182DEBD300F1C072 /* Build configuration list for PBXProject "strava-gpx-parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E244769182DEBD300F1C072 /* Debug */,
+				4E24476A182DEBD300F1C072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E24476B182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E24476C182DEBD300F1C072 /* Debug */,
+				4E24476D182DEBD300F1C072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E24476E182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E24476F182DEBD300F1C072 /* Debug */,
+				4E244770182DEBD300F1C072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E244731182DEBD300F1C072 /* Project object */;
+}
