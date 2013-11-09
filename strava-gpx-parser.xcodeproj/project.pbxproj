@@ -16,22 +16,12 @@
 		4E244750182DEBD300F1C072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E24474E182DEBD300F1C072 /* Main.storyboard */; };
 		4E244753182DEBD300F1C072 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244752182DEBD300F1C072 /* ViewController.m */; };
 		4E244755182DEBD300F1C072 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E244754182DEBD300F1C072 /* Images.xcassets */; };
-		4E24475C182DEBD300F1C072 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24475B182DEBD300F1C072 /* XCTest.framework */; };
-		4E24475D182DEBD300F1C072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24473C182DEBD300F1C072 /* Foundation.framework */; };
-		4E24475E182DEBD300F1C072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E244740182DEBD300F1C072 /* UIKit.framework */; };
-		4E244766182DEBD300F1C072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E244764182DEBD300F1C072 /* InfoPlist.strings */; };
-		4E244768182DEBD300F1C072 /* strava_gpx_parserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */; };
+		4E244779182DF11700F1C072 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244778182DF11700F1C072 /* NavController.m */; };
+		4E24477C182DF5F900F1C072 /* GPXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24477B182DF5F900F1C072 /* GPXViewController.m */; };
+		4E24477F182DF8FF00F1C072 /* GPXTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24477E182DF8FF00F1C072 /* GPXTrack.m */; };
+		4E244782182DF92500F1C072 /* GPXTrackSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244781182DF92500F1C072 /* GPXTrackSegment.m */; };
+		4E244785182DF9A500F1C072 /* GPXTrackpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E244784182DF9A500F1C072 /* GPXTrackpoint.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4E24475F182DEBD300F1C072 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4E244731182DEBD300F1C072 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E244738182DEBD300F1C072;
-			remoteInfo = "strava-gpx-parser";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4E244739182DEBD300F1C072 /* strava-gpx-parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strava-gpx-parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +38,17 @@
 		4E244751182DEBD300F1C072 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E244752182DEBD300F1C072 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E244754182DEBD300F1C072 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "strava-gpx-parserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E24475B182DEBD300F1C072 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4E244763182DEBD300F1C072 /* strava-gpx-parserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "strava-gpx-parserTests-Info.plist"; sourceTree = "<group>"; };
-		4E244765182DEBD300F1C072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = strava_gpx_parserTests.m; sourceTree = "<group>"; };
+		4E244777182DF11700F1C072 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		4E244778182DF11700F1C072 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		4E24477A182DF5F900F1C072 /* GPXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXViewController.h; sourceTree = "<group>"; };
+		4E24477B182DF5F900F1C072 /* GPXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXViewController.m; sourceTree = "<group>"; };
+		4E24477D182DF8FF00F1C072 /* GPXTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrack.h; sourceTree = "<group>"; };
+		4E24477E182DF8FF00F1C072 /* GPXTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrack.m; sourceTree = "<group>"; };
+		4E244780182DF92500F1C072 /* GPXTrackSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrackSegment.h; sourceTree = "<group>"; };
+		4E244781182DF92500F1C072 /* GPXTrackSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrackSegment.m; sourceTree = "<group>"; };
+		4E244783182DF9A500F1C072 /* GPXTrackpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrackpoint.h; sourceTree = "<group>"; };
+		4E244784182DF9A500F1C072 /* GPXTrackpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrackpoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E244757182DEBD300F1C072 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E24475C182DEBD300F1C072 /* XCTest.framework in Frameworks */,
-				4E24475E182DEBD300F1C072 /* UIKit.framework in Frameworks */,
-				4E24475D182DEBD300F1C072 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				4E244742182DEBD300F1C072 /* strava-gpx-parser */,
-				4E244761182DEBD300F1C072 /* strava-gpx-parserTests */,
 				4E24473B182DEBD300F1C072 /* Frameworks */,
 				4E24473A182DEBD300F1C072 /* Products */,
 			);
@@ -93,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				4E244739182DEBD300F1C072 /* strava-gpx-parser.app */,
-				4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +103,16 @@
 				4E244752182DEBD300F1C072 /* ViewController.m */,
 				4E244754182DEBD300F1C072 /* Images.xcassets */,
 				4E244743182DEBD300F1C072 /* Supporting Files */,
+				4E244777182DF11700F1C072 /* NavController.h */,
+				4E244778182DF11700F1C072 /* NavController.m */,
+				4E24477A182DF5F900F1C072 /* GPXViewController.h */,
+				4E24477B182DF5F900F1C072 /* GPXViewController.m */,
+				4E24477D182DF8FF00F1C072 /* GPXTrack.h */,
+				4E24477E182DF8FF00F1C072 /* GPXTrack.m */,
+				4E244783182DF9A500F1C072 /* GPXTrackpoint.h */,
+				4E244784182DF9A500F1C072 /* GPXTrackpoint.m */,
+				4E244780182DF92500F1C072 /* GPXTrackSegment.h */,
+				4E244781182DF92500F1C072 /* GPXTrackSegment.m */,
 			);
 			path = "strava-gpx-parser";
 			sourceTree = "<group>";
@@ -130,24 +124,6 @@
 				4E244745182DEBD300F1C072 /* InfoPlist.strings */,
 				4E244748182DEBD300F1C072 /* main.m */,
 				4E24474A182DEBD300F1C072 /* strava-gpx-parser-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4E244761182DEBD300F1C072 /* strava-gpx-parserTests */ = {
-			isa = PBXGroup;
-			children = (
-				4E244767182DEBD300F1C072 /* strava_gpx_parserTests.m */,
-				4E244762182DEBD300F1C072 /* Supporting Files */,
-			);
-			path = "strava-gpx-parserTests";
-			sourceTree = "<group>";
-		};
-		4E244762182DEBD300F1C072 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4E244763182DEBD300F1C072 /* strava-gpx-parserTests-Info.plist */,
-				4E244764182DEBD300F1C072 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,24 +148,6 @@
 			productReference = 4E244739182DEBD300F1C072 /* strava-gpx-parser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4E244759182DEBD300F1C072 /* strava-gpx-parserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4E24476E182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parserTests" */;
-			buildPhases = (
-				4E244756182DEBD300F1C072 /* Sources */,
-				4E244757182DEBD300F1C072 /* Frameworks */,
-				4E244758182DEBD300F1C072 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4E244760182DEBD300F1C072 /* PBXTargetDependency */,
-			);
-			name = "strava-gpx-parserTests";
-			productName = "strava-gpx-parserTests";
-			productReference = 4E24475A182DEBD300F1C072 /* strava-gpx-parserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +156,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Eric Ito";
-				TargetAttributes = {
-					4E244759182DEBD300F1C072 = {
-						TestTargetID = 4E244738182DEBD300F1C072;
-					};
-				};
 			};
 			buildConfigurationList = 4E244734182DEBD300F1C072 /* Build configuration list for PBXProject "strava-gpx-parser" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +171,6 @@
 			projectRoot = "";
 			targets = (
 				4E244738182DEBD300F1C072 /* strava-gpx-parser */,
-				4E244759182DEBD300F1C072 /* strava-gpx-parserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,14 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E244758182DEBD300F1C072 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E244766182DEBD300F1C072 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,29 +193,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E244785182DF9A500F1C072 /* GPXTrackpoint.m in Sources */,
+				4E24477C182DF5F900F1C072 /* GPXViewController.m in Sources */,
 				4E244753182DEBD300F1C072 /* ViewController.m in Sources */,
 				4E24474D182DEBD300F1C072 /* AppDelegate.m in Sources */,
 				4E244749182DEBD300F1C072 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E244756182DEBD300F1C072 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E244768182DEBD300F1C072 /* strava_gpx_parserTests.m in Sources */,
+				4E244782182DF92500F1C072 /* GPXTrackSegment.m in Sources */,
+				4E244779182DF11700F1C072 /* NavController.m in Sources */,
+				4E24477F182DF8FF00F1C072 /* GPXTrack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4E244760182DEBD300F1C072 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4E244738182DEBD300F1C072 /* strava-gpx-parser */;
-			targetProxy = 4E24475F182DEBD300F1C072 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4E244745182DEBD300F1C072 /* InfoPlist.strings */ = {
@@ -288,14 +221,6 @@
 				4E24474F182DEBD300F1C072 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4E244764182DEBD300F1C072 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E244765182DEBD300F1C072 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,48 +324,6 @@
 			};
 			name = Release;
 		};
-		4E24476F182DEBD300F1C072 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/strava-gpx-parser.app/strava-gpx-parser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "strava-gpx-parserTests/strava-gpx-parserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4E244770182DEBD300F1C072 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/strava-gpx-parser.app/strava-gpx-parser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "strava-gpx-parser/strava-gpx-parser-Prefix.pch";
-				INFOPLIST_FILE = "strava-gpx-parserTests/strava-gpx-parserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,14 +341,6 @@
 			buildConfigurations = (
 				4E24476C182DEBD300F1C072 /* Debug */,
 				4E24476D182DEBD300F1C072 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4E24476E182DEBD300F1C072 /* Build configuration list for PBXNativeTarget "strava-gpx-parserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E24476F182DEBD300F1C072 /* Debug */,
-				4E244770182DEBD300F1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
