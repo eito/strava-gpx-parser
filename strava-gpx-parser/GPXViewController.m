@@ -122,7 +122,7 @@
     else if ([elementName isEqualToString:@"trkpt"]) {
         _currentTrackpoint = [[GPXTrackpoint alloc] init];
         double lat = [attributeDict[@"lat"] doubleValue];
-        double lng = [attributeDict[@"lng"] doubleValue];
+        double lng = [attributeDict[@"lon"] doubleValue];
         _currentTrackpoint.latitude = lat;
         _currentTrackpoint.longitude = lng;
     }
@@ -185,16 +185,14 @@
         lastTrackpoint = segment.trackpoints[indexPath.row - 1];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Elevation: %.2fm", tp.elevation];
+    cell.textLabel.text = [NSString stringWithFormat:@"Lat: %f Lng: %f", tp.latitude, tp.longitude];
     double distance = [lastTrackpoint.location distanceFromLocation:tp.location];
     double seconds = 0;
-    double gain = 0;
     if (lastTrackpoint) {
         seconds = [tp.time timeIntervalSince1970] - [lastTrackpoint.time timeIntervalSince1970];
-        gain = tp.elevation - lastTrackpoint.elevation;
     }
     
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2fm   Seconds: %.2fs   Gain: %.2fm", distance, seconds, gain];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2fm   Secs: %.2fs   Elev: %.2fm", distance, seconds, tp.elevation];
     return cell;
 }
 
